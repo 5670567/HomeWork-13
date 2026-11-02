@@ -1,0 +1,2161 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./image/Background_image.png);
+    background-size: 100vw 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+
+div.conteynr1{
+    background-color: rgb(28, 28, 80);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "a b c" 
+    "d e f"
+    ;
+    gap: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+div.conteynr1:hover{
+    background-color: rgb(62, 62, 160);
+    width: 610px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    margin: 5px;
+}
+div.box1{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.box1:hover{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.box2{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    color: rgb(255, 205, 147);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.box2:hover{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.box3{
+    grid-area: c;
+    background-color: yellow;
+    font-size: 50px;
+    color: rgb(175, 204, 11);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.box3:hover{
+    grid-area: c;
+    background-color: yellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.box4{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    color: rgb(166, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.box4:hover{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.box5{
+    grid-area: e;
+    background-color: rgb(83, 148, 45); 
+    font-size: 50px;
+    color: rgb(139, 255, 255);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.box5:hover{
+    grid-area: e;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.box6{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 50px;
+    color: rgb(101, 74, 255);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.box6:hover{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+
+
+div.conteynr2{
+    background-color: rgb(28, 28, 80);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "a a b" 
+    "d c b"
+    ;
+    gap: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+div.conteynr2:hover{
+    background-color: rgb(62, 62, 160);
+    width: 610px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    margin: 5px;
+}
+div.boks1{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.boks1:hover{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.boks2{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    color: rgb(255, 210, 168);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.boks2:hover{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.boks3{
+    grid-area: c;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    color: rgb(139, 255, 245);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.boks3:hover{
+    grid-area: c;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.boks4{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    color: rgb(139, 255, 154);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.boks4:hover{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+
+
+div.conteynr3{
+    background-color: rgb(28, 28, 80);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "b b b" 
+    "d a a"
+    "c c c"
+    ;
+    gap: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+div.conteynr3:hover{
+    background-color: rgb(62, 62, 160);
+    width: 610px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    margin: 5px;
+}
+div.block1{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.block1:hover{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.block2{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    color: rgb(255, 218, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.block2:hover{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.block3{
+    grid-area: c;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    color: rgb(126, 251, 255);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.block3:hover{
+    grid-area: c;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.block4{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    color: rgb(120, 255, 138);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.block4:hover{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+
+
+div.conteynr4{
+    background-color: rgb(28, 28, 80);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "b b a a"
+    "b b a a" 
+    "d e e e"
+    "d e e e"
+    "d e e e"
+    "c c c c"
+    ;
+    gap: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+div.conteynr4:hover{
+    background-color: rgb(62, 62, 160);
+    width: 610px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    margin: 5px;
+}
+div.blok1{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blok1:hover{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.blok2{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    color: rgb(255, 209, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blok2:hover{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.blok3{
+    grid-area: c;
+    background-color: yellow;
+    font-size: 50px;
+    color: rgb(158, 167, 32);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blok3:hover{
+    grid-area: c;
+    background-color: yellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.blok4{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    color: rgb(166, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blok4:hover{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+div.blok5{
+    grid-area: e;
+    background-color: rgb(83, 148, 45); 
+    font-size: 50px;
+    color: rgb(139, 255, 249);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blok5:hover{
+    grid-area: e;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 5px;
+    top: -5px;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+
+
+div.conteynr5{
+    background-color: rgb(28, 28, 80);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "d b e a t s"
+    "i j h k u g"
+    "p m r n v o"
+    ;
+    gap: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+div.conteynr5:hover{
+    background-color: rgb(62, 62, 160);
+    width: 610px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    margin: 5px;
+}
+div.blog1{
+    grid-area: a;
+    background-color: red;
+    font-size: 40px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog1:hover{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog2{
+    grid-area: b;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 214, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog2:hover{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog4{
+    grid-area: d;
+    background-color: green;
+    font-size: 40px;
+    color: rgb(153, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog4:hover{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog5{
+    grid-area: e;
+    background-color: rgb(83, 148, 45);
+    font-size: 40px;
+    color: rgb(139, 255, 236);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog5:hover{
+    grid-area: e;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog7{
+    grid-area: g;
+    background-color: red;
+    font-size: 40px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog7:hover{
+    grid-area: g;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog8{
+    grid-area: h;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 218, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog8:hover{
+    grid-area: h;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog9{
+    grid-area: i;
+    background-color: yellow;
+    font-size: 40px;
+    color: rgb(116, 122, 26);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog9:hover{
+    grid-area: i;
+    background-color: yellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog10{
+    grid-area: j;
+    background-color: green;
+    font-size: 40px;
+    color: rgb(139, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog10:hover{
+    grid-area: j;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog11{
+    grid-area: k;
+    background-color: rgb(83, 148, 45); 
+    font-size: 40px;
+    color: rgb(139, 251, 255);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog11:hover{
+    grid-area: k;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog12{
+    grid-area: l;
+    background-color: greenyellow;
+    font-size: 40px;
+    color: rgb(60, 124, 30);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog12:hover{
+    grid-area: l;
+    background-color: greenyellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog13{
+    grid-area: m;
+    background-color: red;
+    font-size: 40px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog13:hover{
+    grid-area: m;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog14{
+    grid-area: n;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 205, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog14:hover{
+    grid-area: n;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog15{
+    grid-area: o;
+    background-color: yellowgreen;
+    font-size: 40px;
+    color: rgb(38, 114, 28);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog15:hover{
+    grid-area: o;
+    background-color: yellowgreen;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog16{
+    grid-area: p;
+    background-color: green;
+    font-size: 40px;
+    color: rgb(139, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog16:hover{
+    grid-area: p;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog17{
+    grid-area: q;
+    background-color: rgb(83, 148, 45); 
+    font-size: 40px;
+    color: rgb(106, 255, 248);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog17:hover{
+    grid-area: q;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog18{
+    grid-area: r;
+    background-color: greenyellow;
+    font-size: 40px;
+    color: rgb(72, 146, 29);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog18:hover{
+    grid-area: r;
+    background-color: greenyellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog19{
+    grid-area: s;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 214, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog19:hover{
+    grid-area: s;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog20{
+    grid-area: t;
+    background-color: rgb(83, 148, 45); 
+    font-size: 40px;
+    color: rgb(139, 247, 255);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog20:hover{
+    grid-area: t;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog21{
+    grid-area: u;
+    background-color: yellow;
+    font-size: 40px;
+    color: rgb(116, 139, 33);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog21:hover{
+    grid-area: u;
+    background-color: yellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.blog22{
+    grid-area: v;
+    background-color: green;
+    font-size: 40px;
+    color: rgb(166, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.blog22:hover{
+    grid-area: v;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+
+
+div.conteynr6{
+    background-color: rgb(28, 28, 80);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "a a a a d d c c"
+    "b b g g e e l l"
+    "i i i i f f j j"
+    "i i i i k k h h"
+    "m m m m m m n n"
+    ;
+    gap: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+div.conteynr6:hover{
+    background-color: rgb(62, 62, 160);
+    width: 610px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    margin: 5px;
+}
+div.klas1{
+    grid-area: a;
+    background-color: red;
+    font-size: 40px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas1:hover{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas2{
+    grid-area: b;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 218, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas2:hover{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas3{
+    grid-area: c;
+    background-color: yellow;
+    font-size: 40px;
+    color: rgb(120, 138, 22);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas3:hover{
+    grid-area: c;
+    background-color: yellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas4{
+    grid-area: d;
+    background-color: green;
+    font-size: 40px;
+    color: rgb(153, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas4:hover{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas5{
+    grid-area: e;
+    background-color: rgb(83, 148, 45); 
+    font-size: 40px;
+    color: rgb(139, 255, 245);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas5:hover{
+    grid-area: e;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas6{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 40px;
+    color: rgb(100, 143, 32);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas6:hover{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas7{
+    grid-area: g;
+    background-color: green;
+    font-size: 40px;
+    color: rgb(149, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas7:hover{
+    grid-area: g;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas8{
+    grid-area: h;
+    background-color: rgb(28, 28, 80);
+    font-size: 40px;
+    color: black;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas8:hover{
+    grid-area: h;
+    background-color: rgb(28, 28, 80);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas9{
+    grid-area: i;
+    background-color:orange ;font-size: 40px;
+    color: rgb(255, 214, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas9:hover{
+    grid-area: i;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas10{
+    grid-area: j;
+    background-color: red;
+    font-size: 40px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas10:hover{
+    grid-area: j;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas11{
+    grid-area: k;
+    background-color: green;
+    font-size: 40px;
+    color: rgb(139, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas11:hover{
+    grid-area: k;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas12{
+    grid-area: l;
+    background-color: rgb(28, 28, 80);
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas12:hover{
+    grid-area: l;
+    background-color: rgb(28, 28, 80);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas13{
+    grid-area: m;
+    background-color: greenyellow;
+    font-size: 40px;
+    color: rgb(105, 141, 19);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+div.klas13:hover{
+    grid-area: m;
+    background-color: greenyellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.klas14{
+    grid-area: n;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 214, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.klas14:hover{
+    grid-area: n;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+
+
+div.conteynr7{
+    background-color: rgb(28, 28, 80);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "b b b b f f f f"
+    "a a a a d d d d"
+    "a a a a d d d d"
+    ;
+    gap: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+div.conteynr7:hover{
+    background-color: rgb(62, 62, 160);
+    width: 610px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    margin: 5px;
+}
+div.border1{
+    grid-area: a;
+    background-color: red;
+    font-size: 40px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.border1:hover{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.border2{
+    grid-area: b;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 205, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.border2:hover{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.border5{
+    grid-area: e;
+    background-color: rgb(83, 148, 45); 
+    font-size: 40px;
+    color: rgb(139, 247, 255);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.border5:hover{
+    grid-area: e;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.border6{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 40px;
+    color: rgb(24, 126, 38);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.border6:hover{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.border7{
+    grid-area: g;
+    background-color: greenyellow;
+    font-size: 40px;
+    color: rgb(38, 155, 23);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.border7:hover{
+    grid-area: g;
+    background-color: greenyellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.border8{
+    grid-area: h;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 214, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.border8:hover{
+    grid-area: h;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.border4{
+    grid-area: d;
+    background-color: green;
+    display: grid;
+    grid-template-areas: 
+    "g g g g"
+    "e e h h"
+    ;
+    gap: 10px;
+    padding: 10px;
+}
+div.border4:hover{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+
+
+
+div.conteynr8{
+    background-color: rgb(28, 28, 80);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "a c f e d"
+    "i h b b b"
+    "g g g g g"
+    ;
+    gap: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+div.conteynr8:hover{
+    background-color: rgb(62, 62, 160);
+    width: 610px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    margin: 5px;
+}
+div.packet1{
+    grid-area: a;
+    background-color: red;
+    font-size: 40px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.packet1:hover{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.packet2{
+    grid-area: b;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 205, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.packet2:hover{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.packet3{
+    grid-area: c;
+    background-color: yellow;
+    font-size: 40px;
+    color: rgb(100, 114, 22);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.packet3:hover{
+    grid-area: c;
+    background-color: yellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.packet4{
+    grid-area: d;
+    background-color: green;
+    font-size: 40px;
+    color: rgb(143, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.packet4:hover{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.packet5{
+    grid-area: e;
+    background-color: rgb(83, 148, 45); 
+    font-size: 40px;
+    color: rgb(119, 255, 255);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.packet5:hover{
+    grid-area: e;
+    background-color: rgb(83, 148, 45);
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.packet6{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 40px;
+    color: rgb(37, 151, 27);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.packet6:hover{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.packet7{
+    grid-area: g;
+    background-color: yellow;
+    font-size: 40px;
+    color: rgb(90, 102, 23);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.packet7:hover{
+    grid-area: g;
+    background-color: yellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.packet8{
+    grid-area: h;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 209, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.packet8:hover{
+    grid-area: h;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.packet9{
+    grid-area: i;
+    background-color: red;
+    font-size: 40px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.packet9:hover{
+    grid-area: i;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+
+
+div.conteynr9{
+    background-color: rgb(28, 28, 80);
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "b b b b b b"
+    "d d f f f f"
+    "d d a a c c"
+    ;
+    gap: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+div.conteynr9:hover{
+    background-color: rgb(62, 62, 160);
+    width: 610px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 1px white;
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    margin: 5px;
+}
+div.package1{
+    grid-area: a;
+    background-color: red;
+    font-size: 40px;
+    color: rgb(255, 139, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.package1:hover{
+    grid-area: a;
+    background-color: red;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.package2{
+    grid-area: b;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 214, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.package2:hover{
+    grid-area: b;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.package3{
+    grid-area: c;
+    background-color: orange;
+    font-size: 40px;
+    color: rgb(255, 214, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.package3:hover{
+    grid-area: c;
+    background-color: orange;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.package4{
+    grid-area: d;
+    background-color: green;
+    font-size: 40px;
+    color: rgb(149, 255, 139);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.package4:hover{
+    grid-area: d;
+    background-color: green;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
+div.package5{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 40px;
+    color: rgb(44, 117, 26);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.39,1.25,.72,1.68);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.package5:hover{
+    grid-area: f;
+    background-color: greenyellow;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 0px 0px 10px 5px white;
+    color: white;
+    transition-duration: 0.3s;
+    margin: 2px;
+    top: -5px;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+}
